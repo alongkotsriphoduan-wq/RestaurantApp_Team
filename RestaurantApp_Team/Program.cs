@@ -19,9 +19,9 @@ namespace RestaurantApp_Team
     {
         new Restaurant { Name = "KFC", Type = "Fast Food", Rating = 4.2 },
         new Restaurant { Name = "MK", Type = "Suki", Rating = 4.7 },
-        new Restaurant { Name = "KFC", Type = "Fast Food", Rating = 4.2 },
-        new Restaurant { Name = "MK", Type = "Suki", Rating = 4.7 },
-        new Restaurant { Name = "Fuji", Type = "Japanese", Rating = 4.8 },
+        new Restaurant { Name = "Din Tai Fung", Type = "Chinese restaurant", Rating = 4.0 },
+        new Restaurant { Name = "Macdonal", Type = "Fast Food", Rating = 4.9 },
+        new Restaurant { Name = "Hard Rock Cafe", Type = "American restaurant", Rating = 5.0 },
         new Restaurant { Name = "Fuji", Type = "Japanese", Rating = 4.8 }
     };
 
@@ -61,7 +61,7 @@ namespace RestaurantApp_Team
         // คน A รับผิดชอบ
         static void AddRestaurant()
         {
-            Console.WriteLine("Not completed");
+            Console.WriteLine("completed");
         }
 
         // คน B รับผิดชอบ
