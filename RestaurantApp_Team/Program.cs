@@ -61,7 +61,23 @@ namespace RestaurantApp_Team
         // คน A รับผิดชอบ
         static void AddRestaurant()
         {
-            Console.WriteLine("Not completed");
+            Console.Write("Restaurant Name: ");
+            string name = Console.ReadLine();
+
+            Console.Write("Type: ");
+            string type = Console.ReadLine();
+
+            Console.Write("Rating (0-5): ");
+            double rating = double.Parse(Console.ReadLine());
+
+            Restaurant r = new Restaurant();
+            r.Name = name;
+            r.Type = type;
+            r.Rating = rating;
+
+            restaurants.Add(r);
+
+            Console.WriteLine("Add restaurant completed");
         }
 
         // คน B รับผิดชอบ
