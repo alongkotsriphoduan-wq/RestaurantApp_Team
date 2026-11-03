@@ -73,7 +73,26 @@ namespace RestaurantApp_Team
         // คน C รับผิดชอบ
         static void ShowSummary()
         {
-            Console.WriteLine("Not completed");
+            double maxRating = restaurants.Max(r => r.Rating);
+            double minRating = restaurants.Min(r => r.Rating);
+
+            Console.WriteLine("\n===== Restaurant Summary =====");
+
+            Console.WriteLine("\n--- Highest Rating ---");
+            foreach (var r in restaurants.Where(r => r.Rating == maxRating))
+            {
+                Console.WriteLine($"Name: {r.Name}");
+                Console.WriteLine($"Type: {r.Type}");
+                Console.WriteLine($"Rating: {r.Rating}");
+            }
+
+            Console.WriteLine("\n--- Lowest Rating ---");
+            foreach (var r in restaurants.Where(r => r.Rating == minRating))
+            {
+                Console.WriteLine($"Name: {r.Name}");
+                Console.WriteLine($"Type: {r.Type}");
+                Console.WriteLine($"Rating: {r.Rating}");
+            }
         }
     }
 
