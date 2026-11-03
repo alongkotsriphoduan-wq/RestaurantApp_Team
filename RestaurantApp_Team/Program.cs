@@ -67,7 +67,13 @@ namespace RestaurantApp_Team
         // คน B รับผิดชอบ
         static void ShowGoodRating()
         {
-            Console.WriteLine("Not completed");
+            
+            foreach (var restaurant in restaurants)
+            {
+               if (restaurant.Rating >= 4.5 ) {
+                    Console.WriteLine($"ร้าน: {restaurant.Name} | ประเภท: {restaurant.Type} | เรตติ้ง: {restaurant.Rating}");
+               }
+            }
         }
 
         // คน C รับผิดชอบ
